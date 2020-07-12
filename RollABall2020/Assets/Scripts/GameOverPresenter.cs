@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameOverPresenter : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class GameOverPresenter : MonoBehaviour
         {
             // 時間を止める
             Time.timeScale = 0f;
-            m_gameOverText.text = "ゲームオーバー";
+            SceneManager.LoadScene("GameOver");
 
         }
     }
