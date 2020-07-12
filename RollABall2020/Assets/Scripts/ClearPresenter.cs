@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ClearPresenter : MonoBehaviour {
 
@@ -20,7 +21,8 @@ public class ClearPresenter : MonoBehaviour {
     {
 		if (PickUpCountPresenter.GetPickUpCount.Equals(12))
         {
-            m_clearText.text = "クリアー";
+           
+            SceneManager.LoadScene("GameClear");
         }
 	}
 }
