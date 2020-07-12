@@ -22,6 +22,7 @@ public class SphereController: MonoBehaviour {
 	void Start ()
     {
         m_sphereRigidBody = this.GetComponent<Rigidbody>();
+        Time.timeScale = 1.0f;
 	}
 
     private void FixedUpdate()
